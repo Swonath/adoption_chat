@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Merienda:wght@300..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>OhMyCats !</title>
+</head>
+<body>
+    <header>
+        <h1>OhMyCats !</h1>
+        <div class="banner">
+            <h2>Adoptez un chat trop bon !</h2>
+        </div>
+    </header>
+    <main>
+        <div class="main-block1">
+            <div class="adoption-section">
+                <div class="form-adoption">
+                    <h2>Les chats à adopter</h2>
+                    <div class="form-container">
+                        <form id="adoption-form" method="POST">
+                            <div  class="form-group">
+                                <label for="chat-select">Choix du chat :</label>
+                                <select id="chat-select" name="sujet" required>
+                                    <option value="">-- Sélectionnez --</option>
+                                    <option value="sushi">Sushi</option>
+                                    <option value="maki">Maki</option>
+                                    <option value="sashimi_Yakitori">Sashimi Yakitori</option>
+                                    <option value="onigri">Onigri</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="reason">Raison d'adoption :</label>
+                                <textarea type="textarea" class="form-control" name="raison" required placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    <div class="carrousel">
+                        <div class="container"></div>
+                        <p class="bouton position d"><i class="fa-solid fa-chevron-right fa-2xl" style="color: white;"></i></p>
+                        <p class="bouton position g"><i class="fa-solid fa-chevron-right fa-2xl" style="color: white;"></i></p>
+                        <div class="cercle-carrousel">
+                        <p class="nb-img nba"><i class="fa-regular fa-circle fa-sm" style="color: white;"></i></p>
+                        <p class="nb-img nbb"><i class="fa-regular fa-circle fa-sm" style="color: white;"></i></p>
+                        <p class="nb-img nbc"><i class="fa-regular fa-circle fa-sm" style="color: white;"></i></p>
+                        <p class="nb-img nbd"><i class="fa-regular fa-circle fa-sm" style="color: white;"></i></p>
+                        <p class="nb-img nbe"><i class="fa-regular fa-circle fa-sm" style="color: white;"></i></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="main-block2">
+            <div class="container-footer">
+                <div class="text-footer">
+                    <h2>Nos chats à adopter...</h2>
+                    <p>Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+                    <p>Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.</p>
+                </div>
+                <div class="tete-chat">
+                    <img class="img-tete-chat" src="./img/tete-chat.png" alt="tête de chat">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>© OhMyCats</h3>
+    </footer>
+
+<script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>
