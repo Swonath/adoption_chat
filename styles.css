@@ -13,15 +13,12 @@ body {
 header {
     background-color: #061339;
     color: white;
-    font-size: 14px;
 }
-
-h1 {
+header h1 {
     margin-left: 15%;
-    font-size: 18px;
-    padding: 5px;
+    font-size:20px;
+    padding-top: 5px;
     font-family: "Merienda", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
@@ -30,7 +27,6 @@ h1 {
     background: url('./img/background.jpg') center;
     color: #FFF;
     padding: 50px 0;
-    font-size: 22px;
     font-style: normal;
     text-align: center;
     font-family: "Merienda", serif;
@@ -177,83 +173,6 @@ button {
     margin: 20px auto 0;
 }
 
-/* CARROUSEL */
-
-.carrousel{
-    width: 800px;
-    height: 450px;
-    /* border: solid 1px #303030; */
-    border-radius: 4px;
-    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.container{
-    width: 800px;
-    height: 450px;
-}
-
-.bouton{
-    position: absolute;
-    width: 60px;
-    cursor: pointer;
-    top: 210px;
-}
-
-.g{
-    left: 0;
-    opacity: 0.8;
-    transform: rotate(180deg);
-    transition: all 0.3s ease;
-}
-
-.d{
-    right: 0;
-    opacity: 0.8;
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
-}
-
-.g:hover{
-    transform: rotate(180deg) scale(1.1);
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-
-.d:hover{
-    transform: rotate(0deg) scale(1.1);
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-
-.hidden{
-    display: none;
-}
-
-.cercle-carrousel{
-    display: flex;
-    justify-content: center;
-    width: auto;
-}
-
-.cercle-carrousel p{
-    display: flex;
-    justify-content: space-around;
-    width: 20px;
-    margin-top: -30px;
-}
-
-.photo{
-    width: 800px;
-    height:450px;
-    margin: 0;
-    display: inline-block;
-    background-size: cover center;
-}
-
-
 /* block2 */
 
 .main-block2{
@@ -324,22 +243,11 @@ footer h3{
         flex-direction: column;
         width: 90%;
     }
-    .carrousel {
-        order: -1; /* Place le carrousel au-dessus du formulaire */
-        width: 100%;
-        height: auto;
-    }
-    .container {
-        width: 100%;
-        height: auto;
+    .carousel{
+        order: -1;
     }
     .form-adoption {
         width: 100%;
-    }
-    .photo {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Ajuste l'image pour un affichage correct */
     }
     .tete-chat:hover{
         background-color: #061339;
@@ -361,10 +269,11 @@ footer h3{
     .main-block1 {
         flex-direction: column;
     }
-    .carrousel {
+    .carousel {
         order: -1; /* Place le carrousel au-dessus du formulaire */
-        width: 90%;
-        height: auto;
+    }
+    h5{
+        font-size: 8px;
     }
     .container-footer {
         flex-direction: column;
@@ -378,11 +287,6 @@ footer h3{
     }
     .tete-chat:hover{
         background-color: #061339;
-    }
-    .photo {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Ajuste l'image pour un affichage correct */
     }
 }
 
@@ -399,28 +303,16 @@ footer h3{
     .form-container {
         padding: 15px;
     }
-    button {
-        width: 100%;
+    .carousel {
+        order: -1;
     }
-    .carrousel {
-        order: -1; /* Place le carrousel au-dessus du formulaire */
-        width: 100%;
-        height: auto;
-    }
-    .bouton {
-        width: 40px;
+    h5{
+        font-size: 8px;
     }
     footer h3 {
         font-size: 12px;
-    }
-    .photo {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Ajuste l'image pour un affichage correct */
     }
     .tete-chat:hover{
         background-color: #061339;
     }
 }
-
-
