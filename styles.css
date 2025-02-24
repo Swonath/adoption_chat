@@ -17,10 +17,17 @@ header {
 header h1 {
     margin-left: 15%;
     font-size:20px;
-    padding-top: 5px;
+    padding-top: 8px;
     font-family: "Merienda", serif;
     font-weight: 300;
     font-style: normal;
+    transition: all 0.5s ease;
+}
+
+header h1:hover{
+    color: #7885A5;
+    transition: all 0.5s ease;
+    opacity: 1;
 }
 
 .banner {
@@ -87,7 +94,7 @@ label { /* Met le texte en gras pour une meilleure lisibilité */
     margin-bottom: 10px; /* Ajoute un petit espace entre le label et l'input */
 }
 
-.select{
+select{
     width: 100%; /* Prend toute la largeur disponible */
     padding: 8px; /* Rendre les champs plus agréables à utiliser */
     border: 1px solid gray; /* Ajoute une bordure légère */
@@ -107,13 +114,13 @@ textarea{
     appearance: none;
 }
 
-button {
+.form-group button {
     padding: 10px 15px;
-    background-color: green;
+    background-color: rgba(43, 110, 43, 0.705);
     cursor: pointer;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -170,7 +177,19 @@ button {
 }
 
 .close-btn{
-    margin: 20px auto 0;
+    background: #303030;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.close-btn:hover{
+    background-color: #2F4073;
+    transition: all 0.5s ease;
 }
 
 /* block2 */
@@ -203,6 +222,7 @@ button {
     font-optical-sizing: auto;
     font-weight: 300;
     color: #2F4073 ;
+    padding-top: 15px;
 }
 
 .tete-chat{
@@ -212,10 +232,12 @@ button {
 .img-tete-chat{
     height: 250px;
     background-color: #7885A5;
+    transition: all 0.5s ease;
 }
 
 .img-tete-chat:hover{
     background-color: #061339;
+    transition: all 0.5s ease;
 }
 
 /* footer */
@@ -232,6 +254,7 @@ footer h3{
     font-optical-sizing: auto;
     font-weight: 300;
     font-size: 15px;
+    margin-bottom: 0;
 }
 
 /* responsive */
@@ -248,9 +271,6 @@ footer h3{
     }
     .form-adoption {
         width: 100%;
-    }
-    .tete-chat:hover{
-        background-color: #061339;
     }
 }
 
@@ -285,9 +305,6 @@ footer h3{
     .tete-chat {
         margin-left: 0;
     }
-    .tete-chat:hover{
-        background-color: #061339;
-    }
 }
 
 @media (max-width: 480px) {
@@ -311,8 +328,5 @@ footer h3{
     }
     footer h3 {
         font-size: 12px;
-    }
-    .tete-chat:hover{
-        background-color: #061339;
     }
 }
